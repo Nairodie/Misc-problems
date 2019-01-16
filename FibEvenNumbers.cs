@@ -10,7 +10,7 @@ public class Program
 		int result = 0;
 		int sum = 0;
 		
-    //loop through all number under 4000000
+    		//loop through all number under 4000000
 		while(result < 4000000)
 		{
 			if (result % 2 == 0)
