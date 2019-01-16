@@ -2,9 +2,9 @@ using System;
 					
 public class Program
 {
+	//fibonci even numbers under 4000000 added together
 	public static void Main()
-	{
-		//fibonci even numbers under 4000000
+	{		
 		int fib1 = 1;
 		int fib2 = 1;
 		int result = 0;
@@ -15,7 +15,7 @@ public class Program
 		{
 			if (result % 2 == 0)
 			{
-				sum = sum + result;
+			sum = sum + result;
 			}
 			
 			//F(n)=F(n-1)+F(n-2)
