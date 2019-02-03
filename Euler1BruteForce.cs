@@ -5,10 +5,10 @@ public class Program
 	public static void Main()
 	{
 		int result = 0;
-		for (int i = 0; i < 1000; i++){
+		for (var i = 0; i < 1000; i++){
 			if (i % 3 == 0 || i % 5 == 0)
 			{
-				result = result + i;
+			result += i;
 			}
 		}
 		Console.WriteLine(result);
