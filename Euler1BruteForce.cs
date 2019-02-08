@@ -4,11 +4,14 @@ public class Program
 {
 	public static void Main()
 	{
+		//variable result starts @ 0
 		int result = 0;
-		for (var i = 0; i < 1000; i++){
+		//loop through 1000, starting at 0
+		for (var i = 0; i < 1000; i++)
+		{
 			if (i % 3 == 0 || i % 5 == 0)
 			{
-			result += i;
+				result += i;
 			}
 		}
 		Console.WriteLine(result);
