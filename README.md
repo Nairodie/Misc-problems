@@ -1,2 +1,2 @@
 # Misc-problems
-practive problems that I come across. 
+practice problems that I come across. 
