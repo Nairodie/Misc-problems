@@ -40,6 +40,17 @@ public class Program
 			Console.WriteLine("Height is too small");
 			Console.WriteLine("Using minimun");
 			height = Min_Height;
-		}		
+		}
+		
+		if (height > Max_Height)
+		{
+			Console.WriteLine();
+			Console.WriteLine();
+			height = Max_Height;
+		}
+		
+		woodLength = 2 * (width + height) * 3.25;
+		glassArea = 2 * (width * height);
+		
 	}
 }
