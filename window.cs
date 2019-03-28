@@ -35,5 +35,11 @@ public class Program
 		heightString = Console.ReadLine();
 		height = double.Parse(heightString);
 		
+		if (height < Min_Height)
+		{
+			Console.WriteLine("Height is too small");
+			Console.WriteLine("Using minimun");
+			height = Min_Height;
+		}		
 	}
 }
