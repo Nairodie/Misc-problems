@@ -4,10 +4,8 @@ public class Program
 {
 public static void Main()
 {
-	//create int array
-	int[] myArray = {1,3,5,7,9,11};
+	int[] myArray = {1,4,6,7,9,11};
 	
-	//search through new array created
 	for (int i = 0; i < myArray.Length / 2; i++)
 	{
 		//create temp variable with the results from the search
