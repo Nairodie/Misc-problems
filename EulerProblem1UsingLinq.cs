@@ -5,11 +5,10 @@ public class Program
 {
 	public static void Main()
 	{	
-		int result;
-		result = Enumerable.Range(1,999)
-			.Where(x => x % 3 == 0 || x % 5 == 0)
-			.Sum();
+		int sum;
 		
-		Console.WriteLine(result);
+		sum = Enumerable.Range(1,999)
+		.Where(x => x % 3 == 0 || x % 5 == 0).Sum();		
+		Console.WriteLine(sum);
 	}
 }
