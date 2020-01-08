@@ -4,15 +4,16 @@ public class Program
 {
 	public static void Main()
 	{
-		var result = 0;		
+		var results = 0;		
 		
+		//iterative through 1000
 		for (var i = 0; i < 1000; i++)
-		{
+		{			
 			if (i % 3 == 0 || i % 5 == 0)
 			{
-				result += i;
+			results = results + i;
 			}
 		}
-		Console.WriteLine(result);
+		Console.WriteLine(results);
 	}
 }
