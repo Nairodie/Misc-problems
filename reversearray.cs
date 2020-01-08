@@ -2,17 +2,19 @@ using System;
 					
 public class Program
 {
-public static void Main()
-{
-	int[] myArray = {1,4,6,7,9,11};
-	
-	for (int i = 0; i < myArray.Length / 2; i++)
+	public static void Main()
 	{
-		//create temp variable with the results from the search
-		int temp = myArray[i];
-		myArray[i] = myArray[myArray.Length - i - 1];
-		myArray[myArray.Length - i - 1] = temp;
-	}
-	Console.WriteLine(string.Join(",", myArray));
+		int[] resultsArray = {1,5,15,31,77,101};
+	
+		for (int i = 0; i < resultsArray.Length/2; i++)
+		{
+			//create temp variable with the results from the search
+			int temp = resultsArray[i];			
+			resultsArray[i] = resultsArray[resultsArray.Length - i - 1];			
+			resultsArray[resultsArray.Length - i - 1] = temp;
+		}
+		
+		//have to use string join to combine them
+		Console.WriteLine(string.Join(",", resultsArray));
 	}
 }
