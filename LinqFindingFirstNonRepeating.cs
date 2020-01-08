@@ -5,9 +5,10 @@ public class Program
 {
     public static void Main()
     {
-        string input = "Stressed";
-
-        var result = input.GroupBy(y => y.ToString(), StringComparer.CurrentCultureIgnoreCase)
+        string results = "Stressed";
+		
+		//have to use string comparer for capitilization.
+        var result = results.GroupBy(y => y.ToString(), StringComparer.CurrentCultureIgnoreCase)
             .Where(y => y.Count() == 1)
             .Select(y => y.Key)
             .FirstOrDefault();
