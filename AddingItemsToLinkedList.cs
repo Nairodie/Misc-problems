@@ -7,7 +7,7 @@ public class Program
         AddHead();        
     }
 
-    Public void AddHead(int value)
+    Public AddHead(int value)
     {
         DoublyLinkedListNode<int> adding = new DoublyLinkedListNode <int>(value, null, head);
 
